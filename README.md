@@ -89,12 +89,12 @@ python app.py
 #### 1.
 <img src="https://user-images.githubusercontent.com/37477845/102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447.jpg" width="60%">
 <img src="https://user-images.githubusercontent.com/37477845/102242918-ed328c80-3f3d-11eb-907c-61ba05678d54.png" width="80%">
-<img src="https://user-images.githubusercontent.com/37477845/102242852-dd1aad00-3f3d-11eb-9812-9d202f6466f4.png" width="80%">
+<img src="https://user-images.githubusercontent.com/37477845/102244114-418a3c00-3f3f-11eb-8eef-f658e5aa2d0d.png" width="80%">
 
 ### フィンガージェスチャー認識トレーニング方法
 #### 1.
 <img src="https://user-images.githubusercontent.com/37477845/102235434-ac367a00-3f35-11eb-9fc2-77030b5b4303.jpg" width="60%">
-<img src="https://user-images.githubusercontent.com/37477845/102242891-e86dd880-3f3d-11eb-8bbd-e16bf0582da3.png" width="80%">
+<img src="https://user-images.githubusercontent.com/37477845/102244148-49e27700-3f3f-11eb-82e2-fc7de42b30fc.png" width="80%">
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
