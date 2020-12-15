@@ -100,7 +100,7 @@ FPS計測用のモジュールです。
 <img src="https://user-images.githubusercontent.com/37477845/102235434-ac367a00-3f35-11eb-9fc2-77030b5b4303.jpg" width="60%">
 <img src="https://user-images.githubusercontent.com/37477845/102244148-49e27700-3f3f-11eb-82e2-fc7de42b30fc.png" width="80%">
 <img src="https://user-images.githubusercontent.com/37477845/102246771-7481ff00-3f42-11eb-8ddf-9e3cc30c5816.png" width="50%">
-<img src="https://user-images.githubusercontent.com/37477845/102246817-8368b180-3f42-11eb-9851-23a7b12467aa.png" width="50%">
+<img src="https://user-images.githubusercontent.com/37477845/102246817-8368b180-3f42-11eb-9851-23a7b12467aa.png" width="60%">
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
