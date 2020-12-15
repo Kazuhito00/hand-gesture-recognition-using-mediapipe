@@ -26,11 +26,11 @@ python app.py
 * --device<br>カメラデバイス番号の指定 (デフォルト：0)
 * --width<br>カメラキャプチャ時の横幅 (デフォルト：960)
 * --height<br>カメラキャプチャ時の縦幅 (デフォルト：540)
-* --use_static_image_mode<br>MediaPipeの推論にstatic_image_modeを利用するか否か(デフォルト：未指定)
+* --use_static_image_mode<br>MediaPipeの推論にstatic_image_modeを利用するか否か (デフォルト：未指定)
 * --min_detection_confidence<br>
-検出信頼値の閾値(デフォルト：0.5)
+検出信頼値の閾値 (デフォルト：0.5)
 * --min_tracking_confidence<br>
-トラッキング信頼値の閾値(デフォルト：0.5)
+トラッキング信頼値の閾値 (デフォルト：0.5)
 
 # Directory
 <pre>
@@ -82,3 +82,11 @@ python app.py
 * ラベルデータ(point_history_classifier_label.csv)
 * 推論用クラス(point_history_classifier.py)
 
+# Training
+XXXXXXXX
+
+# Author
+高橋かずひと(https://twitter.com/KzhtTkhs)
+ 
+# License 
+hand-gesture-recognition-using-mediapipe is under [Apache v2 license](LICENSE).
