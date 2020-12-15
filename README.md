@@ -83,7 +83,16 @@ python app.py
 * 推論用クラス(point_history_classifier.py)
 
 # Training
-XXXXXXXX
+ハンドサイン認識、フィンガージェスチャー認識は学習データの追加、変更、モデルの再トレーニングが出来ます。
+
+### ハンドサイン認識トレーニング方法
+#### 1.
+<img src="https://user-images.githubusercontent.com/37477845/102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447.jpg" width="60%">
+
+### フィンガージェスチャー認識トレーニング方法
+#### 1.
+<img src="https://user-images.githubusercontent.com/37477845/102235434-ac367a00-3f35-11eb-9fc2-77030b5b4303.jpg" width="60%">
+
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
