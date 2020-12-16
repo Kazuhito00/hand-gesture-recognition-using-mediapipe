@@ -108,14 +108,22 @@ FPS計測用のモジュールです。
 
 #### X.モデル構造
 「[keypoint_classification.ipynb](keypoint_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
-<img src="https://user-images.githubusercontent.com/37477845/102246723-69c76a00-3f42-11eb-8a4b-7c6b032b7e71.png" width="50%">
+<img src="https://user-images.githubusercontent.com/37477845/102246723-69c76a00-3f42-11eb-8a4b-7c6b032b7e71.png" width="50%"><br><br>
 
 ### フィンガージェスチャー認識トレーニング方法
 #### 1.学習データ収集
-「app.py」を起動し「h」を押すと、「MODE:Logging Point History」
-<img src="https://user-images.githubusercontent.com/37477845/102249074-4d78fc80-3f45-11eb-9c1b-3eb975798871.jpg" width="60%">
-<img src="https://user-images.githubusercontent.com/37477845/102345850-54ede380-3fe1-11eb-8d04-88e351445898.png" width="80%">
+「h」を押すと、指先座標の履歴を保存するモードになります（「MODE:Logging Point History」と表示される）<br>
+<img src="https://user-images.githubusercontent.com/37477845/102249074-4d78fc80-3f45-11eb-9c1b-3eb975798871.jpg" width="60%"><br><br>
+「0」～「9」を押すと「model/point_history_classifier/point_history.csv」に以下のようにキーポイントが追記されます。<br>
+1列目：押下した数字(クラスIDとして使用)、2列目以降：座標履歴<br>
+<img src="https://user-images.githubusercontent.com/37477845/102345850-54ede380-3fe1-11eb-8d04-88e351445898.png" width="80%"><br><br>
+キーポイント座標は以下の前処理を④まで実施したものを保存します。<br>
 <img src="https://user-images.githubusercontent.com/37477845/102244148-49e27700-3f3f-11eb-82e2-fc7de42b30fc.png" width="80%">
+
+#### 2.モデル訓練
+
+#### X.モデル構造
+「[point_history_classification.ipynb](point_history_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
 <img src="https://user-images.githubusercontent.com/37477845/102246771-7481ff00-3f42-11eb-8ddf-9e3cc30c5816.png" width="50%">
 <img src="https://user-images.githubusercontent.com/37477845/102246817-8368b180-3f42-11eb-9851-23a7b12467aa.png" width="60%">
 
