@@ -99,7 +99,7 @@ FPS計測用のモジュールです。
 <img src="https://user-images.githubusercontent.com/37477845/102242918-ed328c80-3f3d-11eb-907c-61ba05678d54.png" width="80%">
 <img src="https://user-images.githubusercontent.com/37477845/102244114-418a3c00-3f3f-11eb-8eef-f658e5aa2d0d.png" width="80%"><br><br>
 初期状態では、パー(クラスID：0)、グー(クラスID：1)、指差し(クラスID：2)の3種類の学習データが入っています。<br>
-必要に応じて3以降を保存したり、csvの既存データを削除して、学習データを用意してください。<br>
+必要に応じて3以降を追加したり、csvの既存データを削除して、学習データを用意してください。<br>
 <img src="https://user-images.githubusercontent.com/37477845/102348846-d0519400-3fe5-11eb-8789-2e7daec65751.jpg" width="30%">　<img src="https://user-images.githubusercontent.com/37477845/102348855-d2b3ee00-3fe5-11eb-9c6d-b8924092a6d8.jpg" width="30%">　<img src="https://user-images.githubusercontent.com/37477845/102348861-d3e51b00-3fe5-11eb-8b07-adc08a48a760.jpg" width="30%">
 
 #### 2.モデル訓練
@@ -118,9 +118,14 @@ FPS計測用のモジュールです。
 1列目：押下した数字(クラスIDとして使用)、2列目以降：座標履歴<br>
 <img src="https://user-images.githubusercontent.com/37477845/102345850-54ede380-3fe1-11eb-8d04-88e351445898.png" width="80%"><br><br>
 キーポイント座標は以下の前処理を④まで実施したものを保存します。<br>
-<img src="https://user-images.githubusercontent.com/37477845/102244148-49e27700-3f3f-11eb-82e2-fc7de42b30fc.png" width="80%">
+<img src="https://user-images.githubusercontent.com/37477845/102244148-49e27700-3f3f-11eb-82e2-fc7de42b30fc.png" width="80%"><br><br>
+初期状態では、静止(クラスID：0)、時計回り(クラスID：1)、反時計回り(クラスID：2)、移動(クラスID：4)の4種類の学習データが入っています。<br>
+必要に応じて5以降を追加したり、csvの既存データを削除して、学習データを用意してください。<br>
+<img src="https://user-images.githubusercontent.com/37477845/102350939-02b0c080-3fe9-11eb-94d8-54a3decdeebc.jpg" width="30%">　<img src="https://user-images.githubusercontent.com/37477845/102350945-05131a80-3fe9-11eb-904c-a1ec573a5c7d.jpg" width="30%">　<img src="https://user-images.githubusercontent.com/37477845/102350951-06444780-3fe9-11eb-98cc-91e352edc23c.jpg" width="30%">　<img src="https://user-images.githubusercontent.com/37477845/102350942-047a8400-3fe9-11eb-9103-dbf383e67bf5.jpg" width="30%">
 
 #### 2.モデル訓練
+「[point_history_classification.ipynb](point_history_classification.ipynb)」をJupyter Notebookで開いて上から順に実行してください。<br>
+学習データのクラス数を変更する場合は「NUM_CLASSES = 4」の値を変更し、<br>「model/point_history_classifier/point_history_classifier_label.csv」のラベルを適宜修正してください。<br><br>
 
 #### X.モデル構造
 「[point_history_classification.ipynb](point_history_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
