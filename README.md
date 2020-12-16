@@ -104,7 +104,7 @@ FPS計測用のモジュールです。
 
 #### 2.モデル訓練
 「[keypoint_classification.ipynb](keypoint_classification.ipynb)」をJupyter Notebookで開いて上から順に実行してください。<br>
-学習データのクラス数を変更する場合は「NUM_CLASSES = 3」の値を変更してください。<br><br>
+学習データのクラス数を変更する場合は「NUM_CLASSES = 3」の値を変更し、<br>「model/keypoint_classifier/keypoint_classifier_label.csv」のラベルを適宜修正してください。<br><br>
 
 #### X.モデル構造
 「[keypoint_classification.ipynb](keypoint_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
