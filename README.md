@@ -129,8 +129,8 @@ FPS計測用のモジュールです。
 
 #### X.モデル構造
 「[point_history_classification.ipynb](point_history_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
-<img src="https://user-images.githubusercontent.com/37477845/102246771-7481ff00-3f42-11eb-8ddf-9e3cc30c5816.png" width="50%">
-「LSTM」を用いたモデルは以下です。使用する際には「use_lstm = False」を「True」に変更してください（要tf-nightly(2020/12/16時点))
+<img src="https://user-images.githubusercontent.com/37477845/102246771-7481ff00-3f42-11eb-8ddf-9e3cc30c5816.png" width="50%"><br>
+「LSTM」を用いたモデルは以下です。<br>使用する際には「use_lstm = False」を「True」に変更してください（要tf-nightly(2020/12/16時点))<br>
 <img src="https://user-images.githubusercontent.com/37477845/102246817-8368b180-3f42-11eb-9851-23a7b12467aa.png" width="60%">
 
 # Reference
