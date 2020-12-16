@@ -97,8 +97,16 @@ FPS計測用のモジュールです。
 <img src="https://user-images.githubusercontent.com/37477845/102345725-28d26280-3fe1-11eb-9eeb-8c938e3f625b.png" width="80%"><br><br>
 キーポイント座標は以下の前処理を④まで実施したものを保存します。<br>
 <img src="https://user-images.githubusercontent.com/37477845/102242918-ed328c80-3f3d-11eb-907c-61ba05678d54.png" width="80%">
-<img src="https://user-images.githubusercontent.com/37477845/102244114-418a3c00-3f3f-11eb-8eef-f658e5aa2d0d.png" width="80%">
+<img src="https://user-images.githubusercontent.com/37477845/102244114-418a3c00-3f3f-11eb-8eef-f658e5aa2d0d.png" width="80%"><br><br>
+初期状態では、パー(クラスID：0)、グー(クラスID：1)、指差し(クラスID：2)の3種類の学習データが入っています。<br>
+必要に応じて3以降を保存したり、csvの既存データを削除して、学習データを用意してください。<br>
+<img src="https://user-images.githubusercontent.com/37477845/102348846-d0519400-3fe5-11eb-8789-2e7daec65751.jpg" width="30%">　<img src="https://user-images.githubusercontent.com/37477845/102348855-d2b3ee00-3fe5-11eb-9c6d-b8924092a6d8.jpg" width="30%">　<img src="https://user-images.githubusercontent.com/37477845/102348861-d3e51b00-3fe5-11eb-8b07-adc08a48a760.jpg" width="30%">
+
 #### 2.モデル訓練
+「[keypoint_classification.ipynb](keypoint_classification.ipynb)」をJupyter Notebookで開いて上から順に実行してください。<br>
+学習データのクラス数を変更する場合は「NUM_CLASSES = 3」の値を変更してください。<br><br>
+
+「[keypoint_classification.ipynb](keypoint_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
 <img src="https://user-images.githubusercontent.com/37477845/102246723-69c76a00-3f42-11eb-8a4b-7c6b032b7e71.png" width="50%">
 
 ### フィンガージェスチャー認識トレーニング方法
