@@ -107,7 +107,7 @@ FPS計測用のモジュールです。
 学習データのクラス数を変更する場合は「NUM_CLASSES = 3」の値を変更し、<br>「model/keypoint_classifier/keypoint_classifier_label.csv」のラベルを適宜修正してください。<br><br>
 
 #### X.モデル構造
-「[keypoint_classification.ipynb](keypoint_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
+「[keypoint_classification.ipynb](keypoint_classification.ipynb)」で用意しているモデルのイメージは以下です。
 <img src="https://user-images.githubusercontent.com/37477845/102246723-69c76a00-3f42-11eb-8a4b-7c6b032b7e71.png" width="50%"><br><br>
 
 ### フィンガージェスチャー認識トレーニング方法
@@ -128,7 +128,7 @@ FPS計測用のモジュールです。
 学習データのクラス数を変更する場合は「NUM_CLASSES = 4」の値を変更し、<br>「model/point_history_classifier/point_history_classifier_label.csv」のラベルを適宜修正してください。<br><br>
 
 #### X.モデル構造
-「[point_history_classification.ipynb](point_history_classification.ipynb)」で用意しているMLPモデルのイメージは以下です。
+「[point_history_classification.ipynb](point_history_classification.ipynb)」で用意しているモデルのイメージは以下です。
 <img src="https://user-images.githubusercontent.com/37477845/102246771-7481ff00-3f42-11eb-8ddf-9e3cc30c5816.png" width="50%"><br>
 「LSTM」を用いたモデルは以下です。<br>使用する際には「use_lstm = False」を「True」に変更してください（要tf-nightly(2020/12/16時点))<br>
 <img src="https://user-images.githubusercontent.com/37477845/102246817-8368b180-3f42-11eb-9851-23a7b12467aa.png" width="60%">
