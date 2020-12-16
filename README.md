@@ -91,10 +91,14 @@ FPS計測用のモジュールです。
 ### ハンドサイン認識トレーニング方法
 #### 1.学習データ収集
 「k」を押すと、キーポイントの保存するモードになります（「MODE:Logging Key Point」と表示される）<br>
-<img src="https://user-images.githubusercontent.com/37477845/102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447.jpg" width="60%">
-<img src="https://user-images.githubusercontent.com/37477845/102345725-28d26280-3fe1-11eb-9eeb-8c938e3f625b.png" width="80%">
+<img src="https://user-images.githubusercontent.com/37477845/102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447.jpg" width="60%"><br><br>
+「0」～「9」を押すと「model/keypoint_classifier/keypoint.csv」に以下のようにキーポイントが追記されます。<br>
+1列目：押下した数字(クラスIDとして使用)、2列目以降：キーポイント座標<br>
+<img src="https://user-images.githubusercontent.com/37477845/102345725-28d26280-3fe1-11eb-9eeb-8c938e3f625b.png" width="80%"><br><br>
+キーポイント座標は以下の前処理を④まで実施したものを保存します。<br>
 <img src="https://user-images.githubusercontent.com/37477845/102242918-ed328c80-3f3d-11eb-907c-61ba05678d54.png" width="80%">
 <img src="https://user-images.githubusercontent.com/37477845/102244114-418a3c00-3f3f-11eb-8eef-f658e5aa2d0d.png" width="80%">
+#### 2.モデル訓練
 <img src="https://user-images.githubusercontent.com/37477845/102246723-69c76a00-3f42-11eb-8a4b-7c6b032b7e71.png" width="50%">
 
 ### フィンガージェスチャー認識トレーニング方法
