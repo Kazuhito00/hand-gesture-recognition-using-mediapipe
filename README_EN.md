@@ -1,4 +1,4 @@
-[Japanese/[English](https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe/blob/main/README_EN.md)]
+[[Japanese](README.md)/English]
 
 ---
 # hand-gesture-recognition-using-mediapipe
