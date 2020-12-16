@@ -102,6 +102,9 @@ FPS計測用のモジュールです。
 <img src="https://user-images.githubusercontent.com/37477845/102246771-7481ff00-3f42-11eb-8ddf-9e3cc30c5816.png" width="50%">
 <img src="https://user-images.githubusercontent.com/37477845/102246817-8368b180-3f42-11eb-9851-23a7b12467aa.png" width="60%">
 
+# Reference
+* [MediaPipe](https://mediapipe.dev/)
+
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
  
