@@ -12,7 +12,7 @@ MediaPipe(Python版)を用いて手の姿勢推定を行い、検出したキー
 # Requirements
 * mediapipe 0.8.1
 * OpenCV 3.4.2 or Later
-* Tensorflow 2.3.0 or Later<br>tf-nightly 2.5.0.dev or later (LSTMを用いたモデルのTFLiteを学習したい場合のみ)
+* Tensorflow 2.3.0 or Later<br>tf-nightly 2.5.0.dev or later (LSTMモデルのTFLiteを作成する場合のみ)
 * scikit-learn 0.23.2 or Later (学習時に混同行列を表示したい場合のみ) 
 * matplotlib 3.3.2 or Later (学習時に混同行列を表示したい場合のみ)
 
