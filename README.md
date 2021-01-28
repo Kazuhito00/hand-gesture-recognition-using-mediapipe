@@ -138,6 +138,7 @@ FPS計測用のモジュールです。
 
 # Reference
 * [MediaPipe](https://mediapipe.dev/)
+* [Kazuhito00/mediapipe-python-sample](https://github.com/Kazuhito00/mediapipe-python-sample)
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
