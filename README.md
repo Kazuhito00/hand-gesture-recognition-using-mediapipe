@@ -139,6 +139,7 @@ FPS計測用のモジュールです。
 # Application example
 以下に応用事例を紹介します。
 * [Control DJI Tello drone with Hand gestures](https://towardsdatascience.com/control-dji-tello-drone-with-hand-gestures-b76bd1d4644f)
+* [Classifying American Sign Language Alphabets on the OAK-D](https://www.cortic.ca/post/classifying-american-sign-language-alphabets-on-the-oak-d)
 
 # Reference
 * [MediaPipe](https://mediapipe.dev/)
