@@ -16,12 +16,27 @@ This repository contains the following contents.
 * mediapipe 0.8.1
 * OpenCV 3.4.2 or Later
 * Tensorflow 2.3.0 or Later<br>tf-nightly 2.5.0.dev or later (Only when creating a TFLite for an LSTM model)
-* scikit-learn 0.23.2 or Later (Only if you want to display the confusion matrix) 
+* scikit-learn 0.23.2 or Later (Only if you want to display the confusion matrix)
 * matplotlib 3.3.2 or Later (Only if you want to display the confusion matrix)
 
 # Demo
 Here's how to run the demo using your webcam.
 ```bash
+python app.py
+```
+
+Here is how to run the demo using Docker and a webcam.
+```bash
+docker build -t hand_gesture .
+
+xhost +local: && \
+docker run --rm -it \
+--device /dev/video0:/dev/video0 \
+-v `pwd`:/home/user/workdir \
+-v /tmp/.X11-unix/:/tmp/.X11-unix:rw \
+-e DISPLAY=$DISPLAY \
+hand_gesture:latest
+
 python app.py
 ```
 
@@ -40,7 +55,7 @@ Tracking confidence threshold (Default：0.5)
 │  app.py
 │  keypoint_classification.ipynb
 │  point_history_classification.ipynb
-│  
+│
 ├─model
 │  ├─keypoint_classifier
 │  │  │  keypoint.csv
@@ -48,14 +63,14 @@ Tracking confidence threshold (Default：0.5)
 │  │  │  keypoint_classifier.py
 │  │  │  keypoint_classifier.tflite
 │  │  └─ keypoint_classifier_label.csv
-│  │          
+│  │
 │  └─point_history_classifier
 │      │  point_history.csv
 │      │  point_history_classifier.hdf5
 │      │  point_history_classifier.py
 │      │  point_history_classifier.tflite
 │      └─ point_history_classifier_label.csv
-│          
+│
 └─utils
     └─cvfpscalc.py
 </pre>
@@ -148,6 +163,6 @@ Here are some application examples.
 
 # Author
 Kazuhito Takahashi(https://twitter.com/KzhtTkhs)
- 
-# License 
+
+# License
 hand-gesture-recognition-using-mediapipe is under [Apache v2 license](LICENSE).

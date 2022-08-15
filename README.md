@@ -16,12 +16,27 @@ MediaPipe(Python版)を用いて手の姿勢推定を行い、検出したキー
 * mediapipe 0.8.1
 * OpenCV 3.4.2 or Later
 * Tensorflow 2.3.0 or Later<br>tf-nightly 2.5.0.dev or later (LSTMモデルのTFLiteを作成する場合のみ)
-* scikit-learn 0.23.2 or Later (学習時に混同行列を表示したい場合のみ) 
+* scikit-learn 0.23.2 or Later (学習時に混同行列を表示したい場合のみ)
 * matplotlib 3.3.2 or Later (学習時に混同行列を表示したい場合のみ)
 
 # Demo
 Webカメラを使ったデモの実行方法は以下です。
 ```bash
+python app.py
+```
+
+DockerとWebカメラを使ったデモの実行方法は以下です。
+```bash
+docker build -t hand_gesture .
+
+xhost +local: && \
+docker run --rm -it \
+--device /dev/video0:/dev/video0 \
+-v `pwd`:/home/user/workdir \
+-v /tmp/.X11-unix/:/tmp/.X11-unix:rw \
+-e DISPLAY=$DISPLAY \
+hand_gesture:latest
+
 python app.py
 ```
 
@@ -40,7 +55,7 @@ python app.py
 │  app.py
 │  keypoint_classification.ipynb
 │  point_history_classification.ipynb
-│  
+│
 ├─model
 │  ├─keypoint_classifier
 │  │  │  keypoint.csv
@@ -48,14 +63,14 @@ python app.py
 │  │  │  keypoint_classifier.py
 │  │  │  keypoint_classifier.tflite
 │  │  └─ keypoint_classifier_label.csv
-│  │          
+│  │
 │  └─point_history_classifier
 │      │  point_history.csv
 │      │  point_history_classifier.hdf5
 │      │  point_history_classifier.py
 │      │  point_history_classifier.tflite
 │      └─ point_history_classifier_label.csv
-│          
+│
 └─utils
     └─cvfpscalc.py
 </pre>
@@ -147,6 +162,6 @@ FPS計測用のモジュールです。
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
- 
-# License 
+
+# License
 hand-gesture-recognition-using-mediapipe is under [Apache v2 license](LICENSE).
