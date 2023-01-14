@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "hand-gesture-recognition-using-mediapipe"
+authors:
+- family-names: "Takahashi"
+  given-names: "Shigeki"
+  orcid: "https://orcid.org/0000-0002-1343-9181"
+date-released: 2020-12-15
+message: "If you use 'hand-gesture-recognition-using-mediapipe' in your research, please cite it using these metadata."
+url: "https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe"
+license: Apache-2.0 license
